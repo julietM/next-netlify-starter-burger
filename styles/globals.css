@@ -1,35 +1,68 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: khaki;  
+  text-align: center;
+  line-height: 77px;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(4, 104, 95);
+  
+}
+nav a{
+  color: white;
+  padding-left: 40px;
+  text-decoration: none;
+  line-height: 40px;
+}
+section{
+  width: 100%;
+  height: 400px;
+  background-color: blueviolet;
+}
+.imagen1{
+  margin-left: 330px;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+p{
+  width: 720px;
+  float: right;
+  margin-right: 30px;
+  margin-top: -200px;
+  color: white;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: tomato;
+  text-align: center;
+  line-height: 50px;
+  color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
-
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width:600px){
+  nav a{
+    padding-left: 70px;
+  }
+  .imagen1{
+    margin-left: 20px;
+  }
+  p{    
+    width: 360px;
+    margin-top: 30px;
+    float: left;
+    margin-left: 46px;
+  }
+  section{
+    height: 550px;
+  }
 }
